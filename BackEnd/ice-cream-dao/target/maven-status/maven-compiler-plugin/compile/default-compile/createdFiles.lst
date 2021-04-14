@@ -1,0 +1,5 @@
+top\flywen\dao\mapper\ShopMapper.class
+top\flywen\dao\mapper\OrderMapper.class
+top\flywen\dao\mapper\AddressMapper.class
+top\flywen\dao\mapper\UserMapper.class
+top\flywen\dao\mapper\DeliveryMapper.class

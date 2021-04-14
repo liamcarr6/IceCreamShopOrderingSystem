@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace，命名空间必须和Dao接口一样 -->
+<mapper namespace="top.flywen.dao.mapper.OrderMapper">
+    <select id="getOrderProfile" resultType="top.flywen.model.domain.OrderInfo">
+        select
+	        ic_order.id,
+	        ic_order.order_number,
+	        ic_order.contact,
+	        ic_order.type,
+	        ic_order.payed,
+	        ic_order.address,
+	        ic_price.value as price,
+	        ic_price.name as size,
+	        ic_ice_cream.name,
+	        count(*) as count
+        from
+	        ic_order
+        left join
+	        ic_ice_cream
+        on
+	        ic_ice_cream.id = ic_order.ice_cream_id
+	    left join
+	        ic_address
+	    on
+	        ic_order.address_id = ic_address.id
+	    left join
+	        ic_price
+	    on
+	        ic_order.price_id = ic_price.id
+	        <where>
+				<if test="type != null and type == 1">
+					DATEDIFF(ic_order.update_time,now()) = 0
+				</if>
+				<if test="type != null and type == 2">
+					and DATEDIFF(ic_order.update_time, now()) >= -7
+				</if>
+				<if test="type != null and type == 3">
+					and DATEDIFF(ic_order.update_time, now()) >= -365
+				</if>
+				and ic_order.payed = 1
+			</where>
+        group by ic_ice_cream.id
+    </select>
+    <select id="getLastOrder" resultType="top.flywen.model.entity.IcOrder">
+        select
+	        `ic_order`.*
+        from
+	        `ic_order`
+        order by
+	        `ic_order`.id desc
+        limit 0, 1
+    </select>
+    <select id="getSchedule" resultType="top.flywen.model.domain.OrderInfo">
+        select
+	        ic_order.id,
+	        ic_order.contact,
+	        ic_order.order_number,
+	        ic_order.type,
+	        ic_order.payed,
+	        ic_order.address,
+	        ic_price.value as price,
+	        ic_price.name as size,
+	        ic_ice_cream.name
+        from
+	        ic_order
+        left join
+	        ic_price
+        on
+	        ic_price.id = ic_order.price_id
+        left join
+	        ic_address
+        on
+	        ic_address.id = ic_order.address_id
+        left join
+        	ic_ice_cream
+        on
+	        ic_ice_cream.id = ic_order.ice_cream_id
+        where
+	        ic_order.delivery_id = #{deliveryId}
+    </select>
+	<select id="getOrderList" resultType="top.flywen.model.domain.OrderInfo">
+		select
+	        ic_order.id,
+	        ic_order.contact,
+	        ic_order.order_number,
+	        ic_order.type,
+	        ic_order.payed,
+	        ic_order.address,
+	        ic_price.value as price,
+	        ic_price.name as size,
+	        ic_ice_cream.name
+        from
+	        ic_order
+        left join
+	        ic_price
+        on
+	        ic_price.id = ic_order.price_id
+        left join
+	        ic_address
+        on
+	        ic_address.id = ic_order.address_id
+        left join
+        	ic_ice_cream
+        on
+	        ic_ice_cream.id = ic_order.ice_cream_id
+        where
+	        ic_order.user_id = #{userId}
+	</select>
+	<update id="pay">
+		update ic_order set payed = 1 where order_number = #{orderNumber}
+	</update>
+</mapper>

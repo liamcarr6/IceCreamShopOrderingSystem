@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>top.flywen</groupId>
+    <artifactId>ice-cream</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>ice-cream-model</module>
+        <module>ice-cream-dao</module>
+        <module>ice-cream-service</module>
+        <module>ice-cream-web</module>
+    </modules>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <!-- version control -->
+    <properties>
+        <parent-version>2.4.2</parent-version>
+        <mybatisplus.version>3.1.1</mybatisplus.version>
+        <druid-version>1.1.14</druid-version>
+        <commons-lang3.version>3.4</commons-lang3.version>
+        <shiro-spring.version>1.4.0</shiro-spring.version>
+        <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
+        <scala-bcrypt_2.10.version>2.3</scala-bcrypt_2.10.version>
+        <spring-boot-dev.version>2.0.4.RELEASE</spring-boot-dev.version>
+        <mybatis-starter.version>1.3.2</mybatis-starter.version>
+        <persistence-api>1.0</persistence-api>
+        <tk-mybatis.version>2.0.2</tk-mybatis.version>
+        <pagehelper.version>1.2.10</pagehelper.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <!-- web starter -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${parent-version}</version>
+            </dependency>
+
+            <!-- test starter -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+                <version>${parent-version}</version>
+            </dependency>
+
+            <!-- devtools -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <scope>provided</scope>
+                <version>${spring-boot-dev.version}</version>
+            </dependency>
+
+            <!-- apache utils -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!-- mysql driver -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <scope>runtime</scope>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+
+            <!-- bcrypt algorithm -->
+            <dependency>
+                <groupId>com.github.t3hnar</groupId>
+                <artifactId>scala-bcrypt_2.10</artifactId>
+                <version>${scala-bcrypt_2.10.version}</version>
+            </dependency>
+
+            <!-- datasource pool -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-version}</version>
+            </dependency>
+
+            <!--  mybatis starter -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-starter.version}</version>
+            </dependency>
+
+            <!-- common mapper starter -->
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${tk-mybatis.version}</version>
+            </dependency>
+
+            <!-- page helper starter -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+
+            <!-- javax persistence interface -->
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>persistence-api</artifactId>
+                <version>${persistence-api}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <!-- shiro starter-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring-boot-web-starter</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+
+        <!-- apache utils -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+
+        <!-- Junit -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+</project>

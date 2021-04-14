@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ice-cream-dao" />
+        <module name="ice-cream-model" />
+        <module name="ice-cream-web" />
+        <module name="ice-cream-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ice-cream" target="1.8" />
+      <module name="ice-cream-dao" target="1.8" />
+      <module name="ice-cream-model" target="1.8" />
+      <module name="ice-cream-service" target="1.8" />
+      <module name="ice-cream-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ice-cream" options="" />
+      <module name="ice-cream-dao" options="-parameters" />
+      <module name="ice-cream-model" options="-parameters" />
+      <module name="ice-cream-service" options="-parameters" />
+      <module name="ice-cream-web" options="-parameters" />
+    </option>
+  </component>
+</project>
