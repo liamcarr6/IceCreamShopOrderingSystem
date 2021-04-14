@@ -1,0 +1,306 @@
+/*****Page Layout*****/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Heebo:wght@700&display=swap');
+
+body{
+	margin: 0;
+}
+
+header{
+	height: 100px;
+	background-color: black;
+	margin-top: 0;
+	font-family: 'Cantarell', sans-serif;
+	color: white;
+}
+
+.title {
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	background-color: #ffdc7c;
+	padding-bottom: 25px;
+}
+
+h2.flavoursHeading{
+	font-family: 'Cantarell', sans-serif;
+	font-size: 35px;
+	color: black;
+	position: relative;
+	top: -100px;
+}
+
+h2.veganHeading{
+	font-family: 'Cantarell', sans-serif;
+	font-size: 35px;
+	color: black;
+	margin-top: 55px;
+	margin-bottom: 55px;
+}
+
+h2.priceHeading{
+	font-family: 'Cantarell', sans-serif;
+	font-size: 35px;
+	color: black;
+	padding-left: 3cm;
+}
+
+main{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/***Table Styling #D3D3D3***/
+.price table{
+	width: 50%;
+	border-collapse: collapse;
+	margin-bottom: 50px;
+	margin-left: 54px;
+}
+
+
+.price th{
+	height:40px;
+	text-align: left;
+	font-size: 18px;
+}
+
+.price td{
+	height: 20px;
+	text-align: left;
+	font-size: 17px;
+}
+
+.price tr + tr td{
+	border-top: 1px solid black;
+}
+
+.price tr:last-child{
+	border-bottom: 2px solid black;
+}
+
+.price tr th{
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	padding: 0.5em;
+}
+
+.price tr td{
+	padding: 0.5em;
+}
+
+/***Footer Section***/
+
+footer {
+    height: 200px;
+    background-color: black;
+    position: inherit;
+
+}
+
+h4.AddressFooter {
+
+    font-size: 22px;
+    font-family: 'Cantarell', sans-serif;
+    padding-left: 3cm;
+
+}
+
+.Address {
+    /* font-size: 14px;
+float: left;
+padding-left: 2ch;
+font-family:'Heebo', sans-serif;
+color: white; */
+
+float: left;
+width:33.33333%;
+text-align:left;
+color: white;
+font-family:'Heebo', sans-serif;
+font-size: 14px;
+
+}
+
+#addressParagraph {
+    padding-left: 3cm;
+
+}
+
+h4.ContactFooter {
+    font-size: 22px;
+    font-family: 'Cantarell', sans-serif;
+    padding-right: 3cm;
+
+}
+
+.contact {
+    /* font-size: 14px;
+float: right;
+padding-right: 2ch;
+font-family:'Heebo', sans-serif;
+color: white; */
+
+    float: left;
+    width:33.33333%;
+    text-align:right;
+    color: white;
+    font-family:'Heebo', sans-serif;
+    font-size: 14px;
+
+}
+
+#contactParagraph {
+    padding-right: 3cm;
+}
+
+h4.HoursFooter {
+    font-size: 22px;
+    font-family: 'Cantarell', sans-serif;
+}
+
+.hours {
+
+    float: left;
+    width:33.33333%;
+    text-align:center;
+    color: white;
+    font-family:'Heebo', sans-serif;
+    font-size: 14px;
+    
+    
+}
+
+/***Navigation bar****/
+
+button.home {
+background-color: #FFFFFF;
+border-width: 0.1cm;
+/* text-align: center; */
+/* display: inline-block; */
+font-size: 25px;
+margin: 4px 2px;
+border-color: black;
+padding: 15px 42px;
+font-family: 'Chivo', sans-serif;
+margin-left: 1.5cm;
+cursor: pointer;
+
+}
+
+button.Order {
+
+    background-color: #FFFFFF;
+border-width: 0.1cm;
+text-align: center;
+/* display: inline-block; */
+font-size: 25px;
+margin: 4px 2px;
+border-color: black;
+padding: 15px 42px;
+font-family: 'Chivo', sans-serif;
+margin-left: 1.5cm;
+cursor: pointer;
+
+}
+
+button.Staff {
+    background-color: #FFFFFF;
+    border-width: 0.1cm;
+    text-align: center;
+    /* display: inline-block; */
+    font-size: 25px;
+    margin: 4px 2px;
+    border-color: black;
+    padding: 15px 42px;
+    font-family: 'Chivo', sans-serif;
+    margin-left: 1.5cm;
+    cursor: pointer;
+  
+    }
+
+    button.ourMenu {
+        background-color: #FFFFFF;
+        border-width: 0.1cm;
+        text-align: center;
+        /* display: inline-block; */
+        font-size: 25px;
+        margin: 4px 2px;
+        border-color: black;
+        padding: 15px 42px;
+        font-family: 'Chivo', sans-serif;
+        margin-left: 1.5cm;
+        cursor: pointer;
+    }
+
+    .navBar button{
+  margin-bottom:5px;
+  /* display:inline-block; */
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  transition: margin-left .5s;}
+
+  .navBar {
+      width: 30%;
+  }
+  
+ 
+ /***Flavours Styling***/
+
+.sec_flavours img{
+	width:200px;
+	height: 200px;
+	border: 1px solid #808080;
+	border-radius: 50%;
+}
+
+.sec_flavours figure{
+	display: inline-block;
+	vertical-align:top;
+	width: 250px;
+	height:370px;
+}
+
+.sec_flavours{
+	text-align: center;
+}
+
+.sec_flavours figcaption{
+	font-size: 18px;
+}
+
+.sec_flavours p{
+	font-size: 17px;
+}
+
+.flavours{
+	position: relative;
+	top: -46px;
+}
+
+
+/**Price section styling**/
+.priceList{
+	background-color: #70BDD1;
+	padding-bottom:20px;
+	padding-top:10px;
+}
+
+
+
+
+
+
+
+
+
+ 
+ 

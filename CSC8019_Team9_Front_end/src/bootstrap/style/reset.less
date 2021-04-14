@@ -1,0 +1,18 @@
+@import "~normalize.css/normalize.css";
+.login-input {
+  input {
+    // 清空点击高亮
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    // 自动填充样式
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 1000px #f5f5f5 inset !important;
+      -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset !important;
+      -webkit-text-fill-color: #666 !important;
+    }
+    // 自动填充文本样式
+    &:-webkit-autofill::first-line {
+      font-size: 24px !important;
+      font-family: "微软雅黑" !important;
+    }
+  }
+}

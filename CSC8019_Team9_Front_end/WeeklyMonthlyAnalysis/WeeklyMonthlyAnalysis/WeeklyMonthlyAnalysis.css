@@ -1,0 +1,191 @@
+/*****
+
+Fonts 
+
+***/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Heebo:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+   }
+
+
+   header {
+    height: 100px;
+    background-color: black;
+    margin-top: 0;
+    font-family: 'Cantarell', sans-serif;
+    color: white;
+   }
+
+
+
+.title {
+    /* color: black; */
+    font-family: 'Lobster', cursive;
+    font-size:20px;
+    color: black;
+    /* position:fixed; */
+    display: flex;
+    justify-content: center;
+    background-color: 
+    #ffdc7c;
+    padding-bottom: 50px;
+
+}
+
+.titleTwo {
+  /* color: black; */
+  font-family: 'Lobster', cursive;
+  font-size:20px;
+  color: black;
+  /* position:fixed; */
+  display: flex;
+  justify-content: center;
+  background-color: 
+  #ffdc7c;
+  padding-bottom: 50px;
+
+}
+
+
+/*
+
+Page Styling
+
+*/
+
+.part1 {
+
+    display: flex; 
+    justify-content: center;
+
+    
+}
+
+
+
+
+body{
+    background-color: #ffdc7c;
+}
+
+
+
+
+footer {
+    height: 200px;
+    background-color: black;
+    position: inherit;
+
+}
+
+
+/* Graph Styling */
+
+  .containerOne {
+      margin: 0, auto;
+      display: flex;
+  }
+
+  .containerTwo{
+    margin: 0, auto;
+    display: flex;
+    padding-bottom: 90px;
+
+  }
+  
+  .wrapper {
+  
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 10ch;
+    
+
+}
+
+.wrapperTwo {
+ 
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 10ch;
+    
+
+}
+
+.wrapperThree {
+
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 10ch;
+    
+
+}   
+
+.wrapperFour {
+    
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 10ch;
+    
+
+}   
+
+
+.containerOneWeekly {
+    margin: 0, auto;
+    display: flex;
+}
+
+.containerTwoWeekly{
+  margin: 0, auto;
+  display: flex;
+
+}
+
+.wrapperWeekly {
+  
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 10ch;
+  
+
+}
+
+.wrapperTwoWeekly {
+ 
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 10ch;
+  
+
+}
+
+.wrapperThreeWeekly {
+ 
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 10ch;
+  
+
+}   
+
+.wrapperFourWeekly {
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 10ch;
+  
+
+}   
+
+
+
+
+

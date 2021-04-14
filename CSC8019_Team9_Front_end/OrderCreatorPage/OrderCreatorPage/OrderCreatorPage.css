@@ -1,0 +1,421 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Heebo:wght@700&display=swap');
+
+  /*makes page orange and text black*/
+  .orange {
+    margin: 0px;
+    color: #000000 !important;
+  }
+
+  /* moves nav away from sticky navbar */
+  .margin-for-bottom {
+    margin-bottom: 2vw;
+  }
+
+  /*makes banner/footer black and text white*/
+  .black {
+    background-color: #000000;
+    color: white;
+  }
+
+  /*changes nav button text*/
+  #navButtons {
+    font-family: 'Cantarell', sans-serif;
+  }
+
+  /*changes nav title text size and font*/
+  #title {
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+  }
+
+  /*changes top banner font*/
+  #topBanner {
+    font-family: 'Open Sans', sans-serif !important;
+  }
+
+  /*for width of nav buttons*/
+  .button {
+    width: 8vw;
+  }
+
+  /*for location of social media buttons*/
+  .social-media-button {
+    margin-right: 4vw;
+  }
+
+  /*for location and customisation of profile button*/
+  .profile-button {
+    margin-right: 7vw;
+    font-family: 'Cantarell', sans-serif;
+    color: #000000 !important;
+  }
+
+  /*for location just of the icon*/
+  .profile-button-icon{
+    margin-right: 1vw;
+  }
+
+  /*box for the react component*/
+  .center-delivery-box{
+    width:100%;
+  }
+
+  /*another box for react component, which centers it on image. Need a new image*/
+  .custom-container{
+    font-size: 1.2vw;
+    height: 40vw;
+    width: 90vw;
+    background: url('icecream\ -\ copy2.png');
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  /*background of react tab*/
+  .delivery-collection{
+    background-color: #ffffff;
+  }
+
+  /*text size for react tab*/
+  .delivery-font {
+    font-size: 1.5vw;
+  }
+
+  /*font and colour for active react tab*/
+  .delivery-collection-tabs{
+    font-family: 'Cantarell', sans-serif;
+    color: #ffdc7c !important;
+  }
+
+  /*font, corner radius, and colour for deactive react tab*/
+  .deactive-tab{
+    font-family: 'Cantarell', sans-serif;
+    background-color: #cccccc !important;
+    color: #808080 !important;
+  }
+
+  /*left react tab spacing and corner radius*/
+  .left-tab {
+    border-radius: 15px 15px 0px 0px;
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  /*middle react tab spacing and corner radius*/
+  .middle-tab {
+    border-radius: 15px 15px 0px 0px;
+    width: 32%;
+  }
+
+  /*right react tab spacing and corner radius*/
+  .right-tab {
+    border-radius: 15px 15px 0px 0px;
+    width: 32%;
+    margin-left: 2%;
+  }
+
+  /*for setting width of react component*/
+  .nested-view-width {
+    width: 40%;
+  }
+
+  /*padding and final touches for react component*/
+  .tab-box {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 0.3vw;
+  }
+
+  /*tab box text*/
+  .tab-box-text{
+    font-family: 'Cantarell', sans-serif;
+  }
+
+  /*footer customisation*/
+  .footer {
+    width: 100%;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif !important;
+  }
+
+  /*adjustements for footer*/
+  .footer-left-lower {
+    margin-top: 4vw;
+  }
+
+  /*adjustements for footer*/
+  .footer-text-margin {
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+  }
+
+  /*circle social media buttons for footer*/
+  /* need to fix resizing and positioning when page shrinks*/
+  .circle-button {
+    display:block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  /* for div that contains grids */
+  .grid-holder {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* styling the cards */
+  .gap-from-heading {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  /* margin for navrar */
+  .gap-from-navbar {
+    margin-top: 2vh;
+  }
+
+  /*FHRS data margin and font */
+  .FHRS-data {
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    font-size: small;
+  }
+
+  .font {
+    font-family: 'Cantarell', sans-serif;
+  }
+
+  .heading-font {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: bold;
+  }
+
+  /*For creating a custom bootstrap card */
+  .my-custom-card {
+    color: black;
+    border-radius: 2.5%;
+    font-size: small;
+  }
+
+.small-font {
+  font-size: small;
+}
+
+
+/*these are for adding the arrows to the drop downs in the modals*/
+
+.modal-card-title {
+}
+  
+.modal-card-title::after {
+  content: "\f107";
+  color: #333;
+  font-family: "FontAwesome";
+}
+
+.modal-card-title[aria-expanded="true"]::after {
+  content: "\f106";
+}
+
+
+/* below are margins/padding for card header */
+.card-header-full.card-header {
+  padding: 0;
+}
+
+.card-header-full .card-title {
+  padding: 10px 15px;
+}
+
+.card-header-full .card-title::after {
+  top: 10px;
+  right: 15px;
+}
+
+
+
+/* below are for modal */
+/* for fixing container padding and heights in certain cases*/
+
+.fix-values {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/* for fixing container padding and heights in certain cases*/
+
+.full-div {
+  width: 100% !important; 
+  height: 100% !important;
+}
+
+/*margin for collapsables*/
+.collapsable-margin {
+  margin-top: 1.1vh;
+  margin-bottom: 1.1vh;
+}
+
+/*title margin from picture*/
+.title-margin {
+  margin-top: 2.5vh;
+  margin-bottom: 2vh;
+}
+
+ /* margin for FHRS info */
+.FHRS-margin {
+  margin-top: 2.5vw;
+}
+
+/* for centering price text*/
+
+.my-div-fix{
+ margin: 0px;
+ padding: 0px;
+ min-height: 3vh;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+/* for centering text in a different div */
+.my-div-fix-2{
+  width: 0;
+  height: 0;
+  margin-right: 4vw;
+  vertical-align: middle;
+  float:Right;
+ }
+
+ /* for add and minus buttons in modal */
+.add-buttons {
+  font-weight: bold;
+  color: #000000;
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  font-size: medium;
+}
+
+
+/* makes modals look clickable, gives it the correct mouse icon*/
+.make-clickable{
+  cursor: pointer
+}
+
+/*adds elipsis for multi-line text*/
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+/* sticky nav stuff */
+
+/* z-index makes sure navs always on top */
+/* font, background, and general changes */
+#navbar {
+  font-family: 'Cantarell', sans-serif;
+  background: white;
+    overflow: hidden;
+    z-index: 9999;
+    margin-bottom: 8vh;
+}
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 1.25vw 2.5vw 1.25vw 0vw;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+/* hover effect for stickybar text*/
+#navbar a:hover {
+  color: #ffdc7c;
+}
+
+/* sticky position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+/*grey border for under the sticky bar */
+.grey-border {
+  border-bottom: 2px solid #f0f0f0;
+}
+  
+/* sticky bar padding */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/*for containing the bar within the sticky bar (bar with buttons on)*/
+.subnavbar-holder {
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* for making basket on sticky bar go to right of page */
+.right-button {
+  float: right;
+  height: 100%;
+  padding: 1vw;
+}
+
+/*for making sticky bar full width*/
+.navbar-holder {
+  width: 100%;
+  background: black;
+}
+
+
+/* second modal for basket */
+
+/*custom basket modal positioning*/
+.custom-basket-modal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 20%;
+  left: 20%;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.margin-for-basket {
+  margin: 0.2vw;
+  padding: 0.0vw;
+}
+
+.bold-item {
+  font-weight: bold;
+}
+
+.basket-margin {
+  margin-bottom: 1vw;
+}
+
+
+
+

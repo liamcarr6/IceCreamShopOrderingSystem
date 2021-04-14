@@ -1,0 +1,142 @@
+.el-dialog__footer {
+  text-align: center !important;
+}
+/**
+  el-row type=flex类型 一律换行
+ */
+.el-row--flex {
+  flex-wrap: wrap;
+}
+
+/**
+  上传图片容器更改为4em，更多尺寸...
+ */
+[size~="em"] {
+  .el-upload--picture-card {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+[size="4em"] {
+  .el-upload-list__item {
+    width: 4em !important;
+    height: 4em !important;
+  }
+}
+[size="4em"] {
+  .el-upload--picture-card {
+    display: inline-flex;
+    width: 4em !important;
+    height: 4em !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+[invisible="true"] {
+  .el-upload {
+    display: none !important;
+  }
+}
+
+/**
+  text button
+ */
+[text].el-button {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+[text="warning"].el-button {
+  color: #e6a23c !important;
+  &:active {
+    color: #cf9236 !important;
+  }
+  &:hover {
+    color: #ebb563 !important;
+  }
+}
+
+[text="danger"].el-button {
+  color: #f56c6c !important;
+  &:active {
+    color: #dd6161 !important;
+  }
+  &:hover {
+    color: #f78989 !important;
+  }
+}
+
+[text="info"].el-button {
+  color: #909399 !important;
+  &:hover {
+    color: #a6a9ad !important;
+  }
+  &:active {
+    color: #82848a !important;
+  }
+}
+
+[text="success"].el-button {
+  color: #85ce61 !important;
+  &:hover {
+    color: #85ce61 !important;
+  }
+  &:active {
+    color: #5daf34 !important;
+  }
+}
+
+[text="primary"].el-button {
+  color: #409eff !important;
+  &:hover {
+    color: #66b1ff !important;
+  }
+  &:active {
+    color: #3a8ee6 !important;
+  }
+}
+
+[text="plain"].el-button {
+  color: #606266 !important;
+  &:hover {
+    color: #409eff !important;
+  }
+  &:active {
+    color: #3a8ee6 !important;
+  }
+}
+
+/**
+  el-col
+ */
+
+@media only screen and (min-width: 1920px) {
+  [stretch-xl="auto"].el-col {
+    max-width: 100%;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1200px){
+  [stretch-lg="auto"].el-col {
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 992px){
+  [stretch-md="auto"].el-col {
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 768px){
+  [stretch-sm="auto"].el-col {
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 250px){
+  [stretch-xs="auto"].el-col {
+    width: auto;
+    max-width: 100%;
+  }
+}

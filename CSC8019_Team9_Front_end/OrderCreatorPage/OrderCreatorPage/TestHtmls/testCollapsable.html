@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="collapseCss.css">
+
+</head>
+
+<body>
+
+
+  <div class="panel-group" id="accordion">
+    <!-- First Panel -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne">Choice of Size (required)</h2>
+      </div>
+
+      <div id="collapseOne" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Small
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Medium
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Large
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Panel -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseTwo">Choice of Dietary Type (required)</h2>
+      </div>
+
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Dairy
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Non-Dairy
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</html>
+</body>
